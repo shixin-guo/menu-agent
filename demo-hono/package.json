@@ -1,0 +1,16 @@
+{
+	"name": "morning-sun-43ac",
+	"type": "module",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy --minify",
+		"cf-typegen": "wrangler types --env-interface CloudflareBindings"
+	},
+	"dependencies": {
+		"hono": "^4.12.4"
+	},
+	"devDependencies": {
+		"@types/node": "^25.3.3",
+		"wrangler": "^4.69.0"
+	}
+}
