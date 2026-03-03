@@ -1,48 +1,20 @@
 # menu-agent
 
-A Node.js AI agent for menu-related automation tasks.
+该仓库当前提供一份可直接交付开发团队执行的方案文档：
 
-## Overview
+- `PRD_TELEGRAM_MENU_AGENT.md`：Telegram 菜单识别与点餐决策 Agent 的 **PRD + 技术拆解任务书**。
 
-`menu-agent` is a Node.js-based agent designed to handle intelligent menu processing workflows using AI capabilities.
+文档覆盖：
+- Cloudflare Workers + Hono + KV 的无状态架构
+- Telegram Webhook + `ctx.waitUntil()` 异步处理模式
+- `/pref` 用户偏好存储
+- Yelp / Google Maps / SerpApi 评论聚合
+- Gemini Prompt 设计与固定 Markdown 输出规范
+- 开发排期、验收清单、上线避坑指南
 
-## Features
+## 使用方式
 
-- 🤖 AI-powered menu understanding
-- 📋 Structured menu data extraction
-- 🔄 Automated menu management workflows
-- 🌐 Multi-platform support
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js >= 18
-- npm or yarn
-
-### Installation
-
-```bash
-git clone https://github.com/shixin-guo/menu-agent.git
-cd menu-agent
-npm install
-```
-
-### Usage
-
-```bash
-npm start
-```
-
-## Project Structure
-
-```
-menu-agent/
-├── src/           # Source code
-├── tests/         # Test files
-├── package.json
-└── README.md
-```
+请直接将 `PRD_TELEGRAM_MENU_AGENT.md` 发给开发团队按模块实施。
 
 ## License
 
